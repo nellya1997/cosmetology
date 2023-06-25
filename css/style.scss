@@ -86,6 +86,7 @@ ul {
 
 // Info
 .info {
+    margin-bottom: 82px;
     &__inner {
         max-width: 351px;
         text-align: center;
@@ -161,11 +162,114 @@ ul {
 }
 .item-2 .info__feature-desc {
     font-size: 12px;
-
 }
 .item-3 .info__feature-desc {
     font-size: 10px;
+}
 
+// Servises
+.services {
+    &__title {
+        font-size: 24px;
+        color: $red;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px 36%;
+        border-radius: 10px;
+        background: $beige;
+        margin-bottom: 10px;
+    }
+
+    &__img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        font-size: 24px;
+        line-height: 26px;
+        cursor: pointer;
+        padding: 14px 61px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    &__menu {
+        background: $beige;
+        border-radius: 10px;
+    }
+    &__menu-item {
+        &:first-child {
+            padding-top: 45px;
+        }
+        &:last-child {
+            padding-bottom: 50px;
+        }
+        padding-bottom: 60px;
+        @include flex-wrapper;
+    }
+}
+
+// dropdown
+.none {
+    display: none;
+}
+
+.menu {
+    &__item-title {
+        max-width: 262px;
+        font-size: 24px;
+        line-height: 1.1;
+        color: #48403b;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__item-subtitle {
+        color: $red;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__item-desc {
+        text-align: center;
+        max-width: 170px;
+        font-size: 12px;
+        font-family: Roboto;
+        font-weight: 300;
+        text-transform: lowercase;
+        margin-bottom: 10px;
+    }
+
+    &__item-btn {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        padding: 16px 47px;
+    }
+
+    &__item-link {
+        text-align: center;
+        font-size: 12px;
+        font-family: Roboto;
+        font-weight: 300;
+        text-transform: lowercase;
+        padding: 12px 14px;
+    }
+}
+
+.btn {
+}
+.title-1 {
+}
+
+.title {
+    background: $raspberry;
+    border-radius: 10px;
+    color: beige;
+    text-align: center;
 }
 
 @media (min-width: 375px) {
