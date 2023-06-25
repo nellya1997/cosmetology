@@ -1,31 +1,73 @@
-@font-face {
-  font-family: "Montserrat-SemiBold";
-  src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
+@import url("/fonts/inter-extra-light.otf");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat-SemiBold", "font", sans-serif;
-  font-weight: 600;
+  font-family: "EB Garamond", serif;
   font-size: 14px;
   line-height: 14px;
   min-width: 320px;
-  background-color: #fdfaff;
   overflow-x: hidden;
-  color: #3a3a42;
+  color: #4f443d;
 }
 
 main {
   margin: 0 auto;
 }
 
+.container {
+  margin: 0 12px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.header__inner {
+  margin: 50px 0;
+  text-align: center;
+  border-radius: 8.9px;
+  background: #ffe8d3;
+  padding: 14px 13px 13px 13px;
+}
+.header__title {
+  position: relative;
+  color: #de2448;
+  text-align: center;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.header__title::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 1px;
+  background: #4f443d;
+  bottom: 1px;
+  left: 14px;
+}
+.header__subtitle {
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 820px;
+  }
+}
