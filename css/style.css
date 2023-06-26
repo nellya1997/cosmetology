@@ -162,18 +162,12 @@ ul {
   border-radius: 9px;
   margin-bottom: 20px;
 }
-.services__btn {
-  font-size: 24px;
-  line-height: 26px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
 .services__menu {
   background: #ffe8d3;
   border-radius: 10px;
   opacity: 0;
   animation: ani 0.5s forwards;
+  margin-bottom: 100px;
 }
 @keyframes ani {
   0% {
@@ -241,19 +235,28 @@ ul {
 }
 
 .btn {
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 27px;
   background: #e74e6c;
   border-radius: 10px;
   color: beige;
   text-align: center;
   width: 205px;
   height: 79px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.btn__menu {
+  background: #e74e6c;
+  border-radius: 10px;
+  color: beige;
+  text-align: center;
 }
 
 .title {
   font-size: 24px;
+  line-height: 1.2;
   color: #de2448;
   text-align: center;
   text-transform: uppercase;
@@ -261,9 +264,8 @@ ul {
   background: #ffe8d3;
   width: 100%;
   max-height: 65px;
-  
+  margin-bottom: 10px;
 }
-*/
 @media (min-width: 768px) {
   .container {
     max-width: 600px;

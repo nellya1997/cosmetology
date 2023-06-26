@@ -30,7 +30,8 @@ main {
     margin: 0 auto;
 }
 
-.container {}
+.container {
+}
 
 section {
     margin: 0px 0px 100px 0px;
@@ -204,12 +205,12 @@ ul {
     }
 
     &__btn {
-        font-size: 24px;
-        line-height: 26px;
-        cursor: pointer;
-        //padding: 14px 61px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
+        // font-size: 24px;
+        // line-height: 26px;
+        // cursor: pointer;
+        // padding: 14px 61px;
+        // margin-bottom: 10px;
+        // text-transform: uppercase;
     }
 
     &__menu {
@@ -217,6 +218,7 @@ ul {
         border-radius: 10px;
         opacity: 0;
         animation: ani 0.5s forwards;
+        margin-bottom: 100px;
     }
     @keyframes ani {
         0% {
@@ -291,25 +293,28 @@ ul {
     }
 }
 
-.btn {}
-
-
-/*
-.title {
+.btn {
     background: $raspberry;
     border-radius: 10px;
     color: beige;
     text-align: center;
     width: 205px;
     height: 79px;
-
-
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
-
+.btn__menu {
+    background: $raspberry;
+    border-radius: 10px;
+    color: beige;
+    text-align: center;
+}
 
 .title {
     font-size: 24px;
-    //line-height: 27px;
+    line-height:1.2;
     color: #de2448;
     text-align: center;
     text-transform: uppercase;
@@ -317,13 +322,14 @@ ul {
     background: #ffe8d3;
     width: 100%;
     max-height: 65px;
+    margin-bottom: 10px;
 
-    &--h1 {}
+    &--h1 {
+    }
 }
 
-
-
-@media (min-width: 375px) {}
+@media (min-width: 375px) {
+}
 
 @media (min-width: 768px) {
     .container {
