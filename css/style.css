@@ -283,6 +283,9 @@ ul {
 .faq {
   color: #48403b;
 }
+.faq__list-inner {
+  width: 100%;
+}
 .faq__list {
   display: flex;
   flex-direction: column;
