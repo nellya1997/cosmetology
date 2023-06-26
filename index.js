@@ -7,7 +7,7 @@ button.addEventListener('click', function () {
 
 
 //  swipers
-
+/*
 const exampleSwiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
@@ -25,3 +25,5 @@ const exampleSwiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+*/
+
