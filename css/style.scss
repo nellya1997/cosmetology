@@ -31,7 +31,10 @@ main {
 }
 
 .container {
+    // этот контейнер нужно будет убрать из секций
     margin: 0 12px;
+    background-color: rgb(255, 245, 245);
+    padding: 0px 20px; //может @mixin?
 }
 
 ul {
@@ -60,6 +63,7 @@ ul {
         background: $beige;
         padding: 14px 13px 13px 13px;
     }
+
     &__title {
         position: relative;
         color: $red;
@@ -87,6 +91,7 @@ ul {
 // Info
 .info {
     margin-bottom: 82px;
+
     &__inner {
         max-width: 351px;
         text-align: center;
@@ -101,6 +106,7 @@ ul {
             color: #d8405d;
         }
     }
+
     &__sibtitle {
         font-family: Inter;
         font-size: 20px;
@@ -124,13 +130,16 @@ ul {
         min-height: 106px;
         text-align: center;
         background: $beige;
+
         // padding: 23px 0 25px 0;
         &:nth-child(1) {
             border-radius: 12.5px 21.8px 0px 12.5px;
         }
+
         &:nth-child(2) {
             border-radius: 21.8px 21.8px 0px 0px;
         }
+
         &:nth-child(3) {
             border-radius: 21.8px 12.6px 12.6px 0px;
         }
@@ -145,24 +154,30 @@ ul {
         font-family: Inter;
     }
 }
+
 .item-1 .info__feature-title {
     font-size: 20.073px;
     text-transform: uppercase;
 }
+
 .item-2 .info__feature-title {
     font-size: 19.33px;
     text-transform: uppercase;
 }
+
 .item-3 .info__feature-title {
     font-size: 15.154px;
 }
+
 .item-1 .info__feature-desc {
     font-size: 12.5px;
     font-weight: 300;
 }
+
 .item-2 .info__feature-desc {
     font-size: 12px;
 }
+
 .item-3 .info__feature-desc {
     font-size: 10px;
 }
@@ -186,6 +201,7 @@ ul {
         border-radius: 9px;
         margin-bottom: 20px;
     }
+
     &__btn {
         font-size: 24px;
         line-height: 26px;
@@ -194,17 +210,21 @@ ul {
         margin-bottom: 10px;
         text-transform: uppercase;
     }
+
     &__menu {
         background: $beige;
         border-radius: 10px;
     }
+
     &__menu-item {
         &:first-child {
             padding-top: 45px;
         }
+
         &:last-child {
             padding-bottom: 50px;
         }
+
         padding-bottom: 60px;
         @include flex-wrapper;
     }
@@ -260,10 +280,9 @@ ul {
     }
 }
 
-.btn {
-}
-.title-1 {
-}
+.btn {}
+
+.title-1 {}
 
 .title {
     background: $raspberry;
