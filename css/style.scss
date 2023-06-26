@@ -182,17 +182,19 @@ ul {
     font-size: 10px;
 }
 
+.heading {
+    font-size: 24px;
+    color: $red;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 36%;
+    border-radius: 10px;
+    background: $beige;
+    margin-bottom: 10px;
+}
 // Servises
 .services {
     &__title {
-        font-size: 24px;
-        color: $red;
-        text-align: center;
-        text-transform: uppercase;
-        padding: 20px 36%;
-        border-radius: 10px;
-        background: $beige;
-        margin-bottom: 10px;
     }
 
     &__img img {
@@ -214,6 +216,16 @@ ul {
     &__menu {
         background: $beige;
         border-radius: 10px;
+        opacity: 0;
+        animation: ani 0.5s forwards;
+    }
+    @keyframes ani {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     &__menu-item {
@@ -280,17 +292,16 @@ ul {
     }
 }
 
-.btn {}
+.btn {
+}
 
-
-.title {
+.btn {
     background: $raspberry;
     border-radius: 10px;
     color: beige;
     text-align: center;
 
     &--h1 {
-
     }
 }
 
