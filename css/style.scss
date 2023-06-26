@@ -37,9 +37,11 @@ main {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD=======.container {
+    margin: 0 12px;
+}
 
-
-section {
+>>>>>>>e33fc04c327aef4bdaab5dbb85f000c56561ca48 section {
     margin: 0px 0px 100px 0px;
 }
 
@@ -57,9 +59,9 @@ ul {
     align-items: center;
 }
 
-//что-то из этого нужно удалить:
+<<<<<<< HEAD //что-то из этого нужно удалить:
 
-@mixin flex-wrapper {
+=======>>>>>>>e33fc04c327aef4bdaab5dbb85f000c56561ca48 @mixin flex-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,6 +70,13 @@ ul {
 
 .flex-wrapper {
     @include flex-wrapper;
+}
+
+.dropdown {
+    background: $beige;
+    border-radius: 10px;
+    opacity: 0;
+    animation: ani 0.5s forwards;
 }
 
 // Header
@@ -219,10 +228,6 @@ ul {
     }
 
     &__menu {
-        background: $beige;
-        border-radius: 10px;
-        opacity: 0;
-        animation: ani 0.5s forwards;
         margin-bottom: 100px;
     }
 
@@ -379,14 +384,70 @@ ul {
     margin-bottom: 10px;
 }
 
+// faq
 
+.faq {
+    color: #48403b;
 
+    &__list-inner {
+        width: 100%;
+    }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 30px 20px;
+        counter-reset: number 0;
+        row-gap: 30px;
+    }
 
+    &__item {
+        counter-increment: number;
+        padding-left: 24px;
+        position: relative;
 
+        &::before {
+            content: counter(number) ".";
+            position: absolute;
+            left: 10px;
+            top: 0;
+        }
+    }
 
+    &__item-question {
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
 
+    &__item-answer {
+        font-size: 12px;
+        font-family: Roboto;
+        font-weight: 300;
+        line-height: 1.4;
+        color: $dark;
+        animation: ani 0.5s forwards;
+    }
 
+    &__item-answer p {
+        position: relative;
+        margin: 0;
+        padding: 0 0 0 15px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 2px;
+            left: 7px;
+            top: 6px;
+            border-radius: 50%;
+            background: #48403b;
+        }
+    }
+}
 
 @media (min-width: 375px) {}
 
