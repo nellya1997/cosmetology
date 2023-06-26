@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>"Косметология</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -191,129 +191,230 @@
       </section>
 
       <section class="examples">
-        <div class="flex-wrapper">
+        <div class="flex-col">
           <div class="examples__title title">
             <p>примеры работ</p>
           </div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+          <div class="examples__swiper">
+            <div class="swiper examples__swiper-wrapper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture class="picture picture--examples">
+                    <source type="image/webp" srcset="img/examples/1.webp" media="(max-width: 2400px)">
+                    <source type="image/jpeg" srcset="img/examples/1.jpg" media="(max-width: 2400px)">
+                    <img src="img/examples/1.png" alt="Студия электроэпиляции">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="picture picture--examples">
+                    <source type="image/webp" srcset="img/examples/2.webp" media="(max-width: 2400px)">
+                    <source type="image/jpeg" srcset="img/examples/2.jpg" media="(max-width: 2400px)">
+                    <img src="img/examples/2.png" alt="Студия электроэпиляции">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="picture picture--examples">
+                    <source type="image/webp" srcset="img/examples/3.webp" media="(max-width: 2400px)">
+                    <source type="image/jpeg" srcset="img/examples/3.jpg" media="(max-width: 2400px)">
+                    <img src="img/examples/3.png" alt="Студия электроэпиляции">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="picture picture--examples">
+                    <source type="image/webp" srcset="img/examples/4.webp" media="(max-width: 2400px)">
+                    <source type="image/jpeg" srcset="img/examples/4.jpg" media="(max-width: 2400px)">
+                    <img src="img/examples/4.png" alt="Студия электроэпиляции">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="picture picture--examples">
+                    <source type="image/webp" srcset="img/examples/5.webp" media="(max-width: 2400px)">
+                    <source type="image/jpeg" srcset="img/examples/5.jpg" media="(max-width: 2400px)">
+                    <img src="img/examples/5.png" alt="Студия электроэпиляции">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
-
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <!--
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-             If we need scrollbar 
-            <div class="swiper-scrollbar"></div>
           </div>
-              -->
-
-            <button class="examples__btn btn">хочу так<br>же</button>
-          </div>
+          <button class="examples__btn btn">хочу так<br>же</button>
       </section>
 
-      <section class="review">
-        <div class="flex-wrapper">
-          <div class="review__title title">
-            <p>отзывы</p>
+      <<<<<<< HEAD <section class="reviews">
+        =======
+        <section class="review">
+          >>>>>>> e33fc04c327aef4bdaab5dbb85f000c56561ca48
+          <div class="flex-wrapper">
+            <div class="review__title title">
+              <p>отзывы</p>
+            </div>
+            <<<<<<< HEAD <div class="reviews__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture class="picture">
+                      <source type="image/webp" srcset="img/review/1.webp" media="(max-width: 2400px)">
+                      <source type="image/jpeg" srcset="img/review/1.jpg" media="(max-width: 2400px)">
+                      <img src="img/review/1.png" alt="??????????????">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture class="picture">
+                      <source type="image/webp" srcset="img/examples/2.webp" media="(max-width: 2400px)">
+                      <source type="image/jpeg" srcset="img/examples/2.webp" media="(max-width: 2400px)">
+                      <img src="img/examples/2.png" alt="!!!!!?????!!!">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture class="picture">
+                      <source type="image/webp" srcset="img/review/3.webp" media="(max-width: 2400px)">
+                      <source type="image/jpeg" srcset="img/review/3.jpg" media="(max-width: 2400px)">
+                      <img src="img/review/3.png" alt="?????????????????">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture class="picture">
+                      <source type="image/webp" srcset="img/review/4.webp" media="(max-width: 2400px)">
+                      <source type="image/jpeg" srcset="img/review/4.jpg" media="(max-width: 2400px)">
+                      <img src="img/review/4.png" alt="?????????????">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture class="picture">
+                      <source type="image/webp" srcset="img/review/5.webp" media="(max-width: 2400px)">
+                      <source type="image/jpeg" srcset="img/review/5.jpg" media="(max-width: 2400px)">
+                      <img src="img/review/5.png" alt="???????????????">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
           </div>
-          <div class="review__swiper">здесь будет swiper</div>
+
+
           <button class="review__btn btn">написать<br>мне</button>
-        </div>
-      </section>
+  </div>
+  </section>
 
-      <!-- faq -->
-      <section class="faq">
+  <section class="faq">
+    <div class="flex-wrapper">
+      <div class="faq__title title flex-wrapper">
+        <p>часто задаваемые<br>вопросы</p>
+      </div>
+      <button class="faq__btn btn">посмотреть</button>
+    </div>
+  </section>
 
-        <div class="flex-wrapper">
-          <div class="faq__title title flex-wrapper">
-            <p>часто задаваемые<br>вопросы</p>
-          </div>
-          <button class="faq__btn btn" id="faq-button">посмотреть</button>
-          <div class="faq__list-inner none" id="faq-content">
-            <ul class="faq__list dropdown">
-              <li class="faq__item">
-                <div class="faq__item-question" data-name="faq-question">Я и моя подруга хотим увеличить губы чуть-чуть.
-                  Вы можете разделить
-                  шприц
-                  с препаратом на двоих?</div>
-                <div class="faq__item-answer none">
-                  Категорически нет. Мне как врачу очень важно ваше здоровье, поэтому в инъекционной косметологии
-                  препарат
-                  никогда не делится между подругами, родственниками и т. д. В погоне за экономией не забывайте о своей
-                  безопасности и здоровье.
-                </div>
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-question" data-name="faq-question">С какого возраста можно делать «уколы красоты»?
-                  Как понять, что пора
-                  «уколоться»?</div>
-                <div class="faq__item-answer none">
-                  Формально можно начинать инъекционные процедуры с 18 лет. К счастью, в этом возрасте очень редко
-                  приходится сталкиваться с глобальными проблемами. Ближе к 25-30 годам уже можно прийти на
-                  консультацию,
-                  и, возможно, какие-то первичные признаки старения уже можно будет корректировать.<br>
-                  А вообще, единственная рекомендация здесь — когда женщина/девушка, посмотрев на себя в зеркало, видит,
-                  что ей что-то конкретно не нравится. Вот тогда ей надо идти к косметологу, поговорить с ним, узнать,
-                  какие перспективы, что можно сделать, какие проблемы и каким способом решить. Это необязательно могут
-                  быть инъекции: возможно, подойдут уходовые процедуры, аппаратная косметология, то, что поможет
-                  притормозить процессы старения.
-                </div>
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-question" data-name="faq-question">Какие общие противопоказания к инъекционной
-                  косметологии существуют?
-                </div>
-                <div class="faq__item-answer none">
-                  <p>Беременность, период кормления грудью;</p>
-                  <p>Системные заболевания;</p>
-                  <p>Хронические заболевания в стадии обострения;</p>
-                  <p>Онкологические и аутоимунные заболевания;</p>
-                  <p>Гнойничковые высыпания на коже;</p>
-                  <p>Герпесная инфекция в период обострения;</p>
-                  <p>Заболевания соединительной ткани;</p>
-                  <p>Некоторые неврологические заболевания;</p>
-                  <p>Возраст до 18 лет</p>
+  <section class="contact">
+    <div class="flex-wrapper">
+      <div class="faq__title title flex-wrapper">
+        <p>связаться со мной</p>
+      </div>
+      <div class="contact__container">
+        <button> whatsapp</button>
+        <button>telegramm</button>
+        <button>instagram</button>
+        <button>vkontakte</button>
+      </div>
+    </div>
+  </section>
+  =======
+  <div class="review__swiper">здесь будет swiper</div>
+  <button class="review__btn btn">написать<br>мне</button>
+  </div>
+  </section>
+
+  <!-- faq -->
+  <section class="faq">
+
+    <div class="flex-wrapper">
+      <div class="faq__title title flex-wrapper">
+        <p>часто задаваемые<br>вопросы</p>
+      </div>
+      <button class="faq__btn btn" id="faq-button">посмотреть</button>
+      <div class="faq__list-inner none" id="faq-content">
+        <ul class="faq__list dropdown">
+          <li class="faq__item">
+            <div class="faq__item-question" data-name="faq-question">Я и моя подруга хотим увеличить губы чуть-чуть.
+              Вы можете разделить
+              шприц
+              с препаратом на двоих?</div>
+            <div class="faq__item-answer none">
+              Категорически нет. Мне как врачу очень важно ваше здоровье, поэтому в инъекционной косметологии
+              препарат
+              никогда не делится между подругами, родственниками и т. д. В погоне за экономией не забывайте о своей
+              безопасности и здоровье.
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question" data-name="faq-question">С какого возраста можно делать «уколы красоты»?
+              Как понять, что пора
+              «уколоться»?</div>
+            <div class="faq__item-answer none">
+              Формально можно начинать инъекционные процедуры с 18 лет. К счастью, в этом возрасте очень редко
+              приходится сталкиваться с глобальными проблемами. Ближе к 25-30 годам уже можно прийти на
+              консультацию,
+              и, возможно, какие-то первичные признаки старения уже можно будет корректировать.<br>
+              А вообще, единственная рекомендация здесь — когда женщина/девушка, посмотрев на себя в зеркало, видит,
+              что ей что-то конкретно не нравится. Вот тогда ей надо идти к косметологу, поговорить с ним, узнать,
+              какие перспективы, что можно сделать, какие проблемы и каким способом решить. Это необязательно могут
+              быть инъекции: возможно, подойдут уходовые процедуры, аппаратная косметология, то, что поможет
+              притормозить процессы старения.
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question" data-name="faq-question">Какие общие противопоказания к инъекционной
+              косметологии существуют?
+            </div>
+            <div class="faq__item-answer none">
+              <p>Беременность, период кормления грудью;</p>
+              <p>Системные заболевания;</p>
+              <p>Хронические заболевания в стадии обострения;</p>
+              <p>Онкологические и аутоимунные заболевания;</p>
+              <p>Гнойничковые высыпания на коже;</p>
+              <p>Герпесная инфекция в период обострения;</p>
+              <p>Заболевания соединительной ткани;</p>
+              <p>Некоторые неврологические заболевания;</p>
+              <p>Возраст до 18 лет</p>
 
 
-                </div>
-              </li>
-              <li class="faq__item">
-                <div class="faq__item-question" data-name="faq-question">Больно ли увеличивать губы? </div>
-                <div class="faq__item-answer none" data-name="faq-desc">
-                  На данный вопрос нет однозначного ответа, поскольку надо учитывать ряд факторов. Болевой порог у
-                  каждого
-                  индивидуален. В целом процедура безболезненная, поскольку большинство препаратов в своем составе имеют
-                  лидокаин. Также дополнительно можно использовать апликационную анестезию (крем-анестетик).
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question" data-name="faq-question">Больно ли увеличивать губы? </div>
+            <div class="faq__item-answer none" data-name="faq-desc">
+              На данный вопрос нет однозначного ответа, поскольку надо учитывать ряд факторов. Болевой порог у
+              каждого
+              индивидуален. В целом процедура безболезненная, поскольку большинство препаратов в своем составе имеют
+              лидокаин. Также дополнительно можно использовать апликационную анестезию (крем-анестетик).
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      <section class="contact">
-        <div class="flex-wrapper">
-          <div class="faq__title title flex-wrapper">
-            <p>связаться со мной</p>
-          </div>
-          <div class="contact__container">
-            <button> whatsapp</button>
-            <button>telegramm</button>
-            <button>instagram</button>
-            <button>vkontakte</button>
-          </div>
-        </div>
-      </section>
+  <section class="contact">
+    <div class="flex-wrapper">
+      <div class="faq__title title flex-wrapper">
+        <p>связаться со мной</p>
+      </div>
+      <div class="contact__container">
+        <button> whatsapp</button>
+        <button>telegramm</button>
+        <button>instagram</button>
+        <button>vkontakte</button>
+      </div>
+    </div>
+  </section>
+  >>>>>>> e33fc04c327aef4bdaab5dbb85f000c56561ca48
 
-    </main>
-    <footer class="footer"></footer>
+  </main>
+  <footer class="footer"></footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
