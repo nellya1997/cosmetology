@@ -34,7 +34,7 @@ main {
     // этот контейнер нужно будет убрать из секций
     margin: 0 12px;
     background-color: rgb(255, 245, 245);
-    padding: 0px 20px; //может @mixin?
+    // padding: 0px 20px; //может @mixin?
 }
 
 ul {
@@ -282,20 +282,19 @@ ul {
 
 .btn {}
 
-.title-1 {}
 
 .title {
     background: $raspberry;
     border-radius: 10px;
     color: beige;
     text-align: center;
+
+    &--h1 {
+
+    }
 }
 
 @media (min-width: 375px) {
-    .container {
-        max-width: 351px;
-        margin: 0 auto;
-    }
 }
 
 @media (min-width: 768px) {
