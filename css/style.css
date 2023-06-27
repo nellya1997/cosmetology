@@ -308,6 +308,11 @@ ul {
   display: inline;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: -4px;
+}
+
 .swiper-pagination-bullet:nth-child(odd) svg {
   transform: rotate(180deg);
 }
@@ -326,10 +331,10 @@ ul {
 .examples__slider {
   width: 100%;
   border-radius: 9px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 .examples__swiper-wrapper {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .reviews {
@@ -341,10 +346,10 @@ ul {
 .reviews__slider {
   width: 100%;
   border-radius: 9px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 .reviews__swiper-wrapper {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .faq {
