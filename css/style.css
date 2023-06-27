@@ -52,14 +52,14 @@ ul {
   animation: ani 0.5s forwards;
 }
 
-.header__inner {
+.logo__inner {
   margin: 50px 0;
   text-align: center;
   border-radius: 8.9px;
   background: #ffe8d3;
   padding: 14px 13px 13px 13px;
 }
-.header__title {
+.logo__title {
   position: relative;
   color: #de2448;
   text-align: center;
@@ -67,7 +67,7 @@ ul {
   text-transform: uppercase;
   padding-bottom: 8px;
 }
-.header__title::before {
+.logo__title::before {
   position: absolute;
   content: "";
   width: 160px;
@@ -76,7 +76,7 @@ ul {
   bottom: 1px;
   left: 14px;
 }
-.header__subtitle {
+.logo__subtitle {
   font-size: 13px;
 }
 
@@ -100,7 +100,7 @@ ul {
   font-size: 20px;
   font-weight: 200;
 }
-.info__img {
+.info__picture {
   margin-top: -17px;
 }
 .info__features {
@@ -174,7 +174,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.services__img img {
+.services__picture img {
   width: 100%;
   height: 100%;
   border-radius: 9px;
@@ -333,6 +333,70 @@ ul {
   top: 6px;
   border-radius: 50%;
   background: #48403b;
+}
+
+.contact__social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  text-align: center;
+}
+.contact__social-btn {
+  position: relative;
+  font-size: 16px;
+  height: 55px;
+  width: 100%;
+}
+.contact__social-btn:nth-child(even) {
+  padding: 0 6px 0 41px;
+}
+.contact__social-btn:nth-child(odd) {
+  padding: 0 41px 0 6px;
+}
+.contact__social-btn:nth-child(1):after {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 55px;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  background: #25d366;
+  border-left: 3px solid #fff;
+}
+.contact__social-btn:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 55px;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: url("/img/footer/content.png");
+  border-right: 3px solid #fff;
+}
+.contact__social-btn:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 55px;
+  top: 0;
+  right: 0;
+  background: #0088cc;
+  border-radius: 10px;
+  border-left: 3px solid #fff;
+}
+.contact__social-btn:nth-child(4)::after {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 55px;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: #4c75a3;
+  border-right: 3px solid #fff;
 }
 
 @media (min-width: 768px) {

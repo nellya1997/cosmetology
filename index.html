@@ -13,15 +13,13 @@
 <body>
 
   <div class="container">
-    <header class="header">
-      <div class="container">
-        <div class="flex-wrapper">
-          <div class="header__inner">
-            <div class="header__title">
-              Чернышова Анна
-            </div>
-            <div class="header__subtitle">Инъекционная и эстетическая <br>косметология</div>
+    <header class="logo">
+      <div class="flex-wrapper">
+        <div class="logo__inner">
+          <div class="logo__title">
+            Чернышова Анна
           </div>
+          <div class="logo__subtitle">Инъекционная и эстетическая <br>косметология</div>
         </div>
       </div>
     </header>
@@ -38,7 +36,7 @@
             </div>
           </div>
 
-          <picture class="info__img">
+          <picture class="info__picture">
             <source type="image/webp" srcset="./img/info/content.webp" media="(max-width: 2400px)">
             <source type="image/png" srcset="./img/info/content.png" media="(max-width: 2400px)">
             <img src="./img/info/content.png" alt="" class="">
@@ -81,7 +79,7 @@
               <p>услуги</p>
             </div>
           </div>
-          <picture class="services__img">
+          <picture class="services__picture">
             <source type="image/webp" srcset="./img/servises/content.webp" media="(max-width: 2400px)">
             <source type="image/jpg" srcset="./img/servises/content.jpg" media="(max-width: 2400px)">
             <img src="./img/servises/content.jpg" alt="" class="">
@@ -300,20 +298,31 @@
 
       <section class="contact">
         <div class="flex-wrapper">
-          <div class="faq__title title flex-wrapper">
+          <div class="contact__title title flex-wrapper">
             <p>связаться со мной</p>
           </div>
-          <div class="contact__container">
-            <button> whatsapp</button>
-            <button>telegramm</button>
-            <button>instagram</button>
-            <button>vkontakte</button>
+          <div class="contact__social">
+            <button class="contact__social-btn btn">whatsapp</button>
+            <button class="contact__social-btn btn">instagram</button>
+            <button class="contact__social-btn btn">telegramm</button>
+            <button class="contact__social-btn btn">vkontakte</button>
           </div>
         </div>
       </section>
 
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="logo">
+      <div class="flex-wrapper">
+        <div class="logo__inner">
+          <div class="logo__title">
+            Чернышова Анна
+          </div>
+          <div class="logo__subtitle">Инъекционная и эстетическая <br>косметология</div>
+        </div>
+      </div>
+    </footer>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
