@@ -355,32 +355,30 @@ ul {
     }
 }
 
-
-
-
 .swiper-pagination .customPagination {
     border-radius: 0;
     background: transparent;
 }
 
 .swiper-pagination-bullet {
-    margin: -6px !important;
-    border: 19.33px solid transparent;
-    border-bottom: 19.33px solid rgba(217, 217, 217, 1.0);
     opacity: 1;
+    display: inline;
 }
 
 .swiper-pagination-bullet:nth-child(odd) {
-    transform: rotate(180deg);
-    position: relative;
-    top: 25px;
+    svg {
+        transform: rotate(180deg);
+    }
 }
 
 .swiper-pagination-bullet-active {
-    border: 27.62px solid transparent;
-    border-bottom: 27.62px solid rgba(217, 217, 217, 1.0);
+    svg {
+        width: 27px;
+        height: 27px;
+    }
 }
 
+// slider has ended
 .examples {
     padding-bottom: 20px;
 
@@ -416,16 +414,6 @@ ul {
         padding-bottom: 70px;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 // faq
 

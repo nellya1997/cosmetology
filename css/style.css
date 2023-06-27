@@ -304,21 +304,17 @@ ul {
 }
 
 .swiper-pagination-bullet {
-  margin: -6px !important;
-  border: 19.33px solid transparent;
-  border-bottom: 19.33px solid rgb(217, 217, 217);
   opacity: 1;
+  display: inline;
 }
 
-.swiper-pagination-bullet:nth-child(odd) {
+.swiper-pagination-bullet:nth-child(odd) svg {
   transform: rotate(180deg);
-  position: relative;
-  top: 25px;
 }
 
-.swiper-pagination-bullet-active {
-  border: 27.62px solid transparent;
-  border-bottom: 27.62px solid rgb(217, 217, 217);
+.swiper-pagination-bullet-active svg {
+  width: 27px;
+  height: 27px;
 }
 
 .examples {
