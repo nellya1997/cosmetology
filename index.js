@@ -26,7 +26,7 @@ function showAnswer(item) {
 
 //  swipers
 
-const swiper1 = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 30,
@@ -34,10 +34,11 @@ const swiper1 = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    renderBullet: function(index, className) {
+      return '\
+      <div class="customPagination ' + className + '"></div>';
+
+    }
   },
 });
 
