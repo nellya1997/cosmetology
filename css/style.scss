@@ -342,9 +342,6 @@ ul {
 
 // slider started
 
-
-// it was about picture from the very beginnig
-
 .picture {
     display: inline-block;
     height: 100%;
@@ -359,32 +356,30 @@ ul {
 }
 
 
-.swiper-pagination-bullet {
-    border-radius: 0;
-    width: 27px;
-    height: 27px;
-    opacity: 1;
-    background: #D9D9D9;
 
+
+.swiper-pagination .customPagination {
+    border-radius: 0;
+    background: transparent;
+}
+
+.swiper-pagination-bullet {
+    margin: -6px !important;
+    border: 19.33px solid transparent;
+    border-bottom: 19.33px solid rgba(217, 217, 217, 1.0);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet:nth-child(odd) {
+    transform: rotate(180deg);
+    position: relative;
+    top: 25px;
 }
 
 .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
+    border: 27.62px solid transparent;
+    border-bottom: 27.62px solid rgba(217, 217, 217, 1.0);
 }
-
-/*
-
-//хоть как то работает и збс
-.swiper .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-
-    &.swiper-pagination-bullet-active {
-        background-color: red;
-    }
-}
-*/
 
 .examples {
     padding-bottom: 20px;
@@ -396,11 +391,11 @@ ul {
     &__slider {
         width: 100%;
         border-radius: 9px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     &__swiper-wrapper {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
     }
 }
 
@@ -414,11 +409,11 @@ ul {
     &__slider {
         width: 100%;
         border-radius: 9px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     &__swiper-wrapper {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
     }
 }
 
