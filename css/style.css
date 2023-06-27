@@ -13,10 +13,6 @@ body {
   background-color: rgb(255, 245, 245);
 }
 
-.container {
-  padding: 0px 20px;
-}
-
 main {
   margin: 0 auto;
 }
@@ -73,6 +69,7 @@ ul {
   width: 100%;
   max-height: 65px;
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .flex-wrapper {
@@ -128,6 +125,7 @@ ul {
 .info__title {
   font-size: 32px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .info__title span {
   color: #d8405d;
@@ -410,14 +408,25 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
+  grid-column-gap: 18px;
   text-align: center;
 }
 .contact__social-btn {
+  margin-bottom: 20px;
   position: relative;
   font-size: 16px;
   height: 55px;
   width: 100%;
+  transition: background 0.2s ease-in, top 0.2s ease-in;
+}
+.contact__social-btn:hover {
+  background: #e9385c;
+  position: relative;
+  top: 1px;
+}
+.contact__social-btn:active {
+  position: relative;
+  top: 5px;
 }
 .contact__social-btn:nth-child(even) {
   padding: 0 6px 0 41px;
@@ -470,6 +479,11 @@ ul {
   border-right: 3px solid #fff;
 }
 
+@media (min-width: 375px) {
+  .contact__social {
+    grid-column-gap: 30px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 600px;
@@ -480,4 +494,4 @@ ul {
   .container {
     max-width: 820px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
