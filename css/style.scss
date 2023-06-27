@@ -28,10 +28,6 @@ body {
     background-color: rgb(255, 245, 245);
 }
 
-.container {
-    padding: 0px 20px;
-}
-
 main {
     margin: 0 auto;
 }
@@ -88,8 +84,8 @@ ul {
     width: 100%;
     max-height: 65px;
     margin-bottom: 10px;
+    font-weight: normal;
 }
-
 
 //что-то из этого нужно удалить:
 
@@ -158,6 +154,7 @@ ul {
     &__title {
         font-size: 32px;
         text-transform: uppercase;
+        font-weight: normal;
 
         span {
             color: #d8405d;
@@ -337,13 +334,7 @@ ul {
     }
 }
 
-
-
-
 // slider started
-
-
-// it was about picture from the very beginnig
 
 .picture {
     display: inline-block;
@@ -360,31 +351,18 @@ ul {
 
 
 .swiper-pagination-bullet {
-    border-radius: 0;
-    width: 27px;
-    height: 27px;
+    margin: -6px !important;
+    border: 19.33px solid transparent;
+    border-bottom: 19.33px solid rgba(217, 217, 217, 1.0);
     opacity: 1;
     background: #D9D9D9;
 
 }
 
 .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
+    border: 27.62px solid transparent;
+    border-bottom: 27.62px solid rgba(217, 217, 217, 1.0);
 }
-
-/*
-
-//хоть как то работает и збс
-.swiper .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-
-    &.swiper-pagination-bullet-active {
-        background-color: red;
-    }
-}
-*/
 
 .examples {
     padding-bottom: 20px;
@@ -396,11 +374,11 @@ ul {
     &__slider {
         width: 100%;
         border-radius: 9px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     &__swiper-wrapper {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
     }
 }
 
@@ -414,23 +392,13 @@ ul {
     &__slider {
         width: 100%;
         border-radius: 9px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     &__swiper-wrapper {
-        padding-bottom: 30px;
+        padding-bottom: 70px;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 // faq
 
@@ -503,11 +471,26 @@ ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 30px;
+        grid-column-gap: 18px;
         text-align: center;
     }
 
     &__social-btn {
+        margin-bottom: 20px;
+        position: relative;
+        font-size: 16px;
+        height: 55px;
+        width: 100%;
+        transition: background 0.2s ease-in, top 0.2s ease-in;
+        &:hover {
+            background: #e9385c;
+            position: relative;
+            top: 1px;
+        }
+        &:active {
+            position: relative;
+            top: 5px;
+        }
         &:nth-child(even) {
             padding: 0 6px 0 41px;
         }
@@ -515,11 +498,6 @@ ul {
         &:nth-child(odd) {
             padding: 0 41px 0 6px;
         }
-
-        position: relative;
-        font-size: 16px;
-        height: 55px;
-        width: 100%;
 
         &:nth-child(1):after {
             position: absolute;
@@ -571,7 +549,11 @@ ul {
     }
 }
 
-@media (min-width: 375px) {}
+@media (min-width: 375px) {
+    .contact__social {
+        grid-column-gap: 30px;
+    }
+}
 
 @media (min-width: 768px) {
     .container {
