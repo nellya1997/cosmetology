@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
 @import url("/fonts/inter-extra-light.otf");
 html {
@@ -297,31 +296,29 @@ ul {
   border-radius: 9px;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination .customPagination {
   border-radius: 0;
-  width: 27px;
-  height: 27px;
+  background: transparent;
+}
+
+.swiper-pagination-bullet {
+  margin: -6px !important;
+  border: 19.33px solid transparent;
+  border-bottom: 19.33px solid rgb(217, 217, 217);
   opacity: 1;
-  background: #d9d9d9;
+}
+
+.swiper-pagination-bullet:nth-child(odd) {
+  transform: rotate(180deg);
+  position: relative;
+  top: 25px;
 }
 
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #007aff;
+  border: 27.62px solid transparent;
+  border-bottom: 27.62px solid rgb(217, 217, 217);
 }
 
-/*
-
-//хоть как то работает и збс
-.swiper .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-
-    &.swiper-pagination-bullet-active {
-        background-color: red;
-    }
-}
-*/
 .examples {
   padding-bottom: 20px;
 }
@@ -331,10 +328,10 @@ ul {
 .examples__slider {
   width: 100%;
   border-radius: 9px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .examples__swiper-wrapper {
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 
 .reviews {
@@ -346,10 +343,10 @@ ul {
 .reviews__slider {
   width: 100%;
   border-radius: 9px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .reviews__swiper-wrapper {
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 
 .faq {
