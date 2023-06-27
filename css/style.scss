@@ -57,6 +57,40 @@ ul {
     align-items: center;
 }
 
+.btn {
+    background: $raspberry;
+    border-radius: 10px;
+    color: beige;
+    text-align: center;
+    width: 205px;
+    height: 79px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.btn__menu {
+    background: $raspberry;
+    border-radius: 10px;
+    color: beige;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #de2448;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: #ffe8d3;
+    width: 100%;
+    max-height: 65px;
+    margin-bottom: 10px;
+}
+
+
 //что-то из этого нужно удалить:
 
 @mixin flex-wrapper {
@@ -218,9 +252,6 @@ ul {
 
 // Servises
 .services {
-    &__title {
-    }
-
     &__picture img {
         width: 100%;
         height: 100%;
@@ -306,77 +337,100 @@ ul {
     }
 }
 
+
+
+
+// slider started
+
+
+// it was about picture from the very beginnig
+
 .picture {
     display: inline-block;
     height: 100%;
     width: 100%;
 
     & img {
-        //width: 100%;
+        width: 100%;
         height: 100%;
         object-fit: contain;
         border-radius: 9px;
     }
-
-    &--services {
-        margin-bottom: 5px;
-    }
 }
 
+
+.swiper-pagination-bullet {
+    border-radius: 0;
+    width: 27px;
+    height: 27px;
+    opacity: 1;
+    background: #D9D9D9;
+
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+}
+
+/*
+
+//хоть как то работает и збс
+.swiper .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+
+    &.swiper-pagination-bullet-active {
+        background-color: red;
+    }
+}
+*/
+
 .examples {
-    &__title-swipper {
-        margin-bottom: 23px;
+    padding-bottom: 20px;
+
+    &__title {
+        margin-bottom: 10px;
     }
 
-    &__swiper {
-        // padding: 0 50px;
-        margin-bottom: 63px;
+    &__slider {
+        width: 100%;
+        border-radius: 9px;
+        padding-bottom: 20px;
     }
 
     &__swiper-wrapper {
-        padding-bottom: 10px;
-    }
-
-    &__swiper-wrapper .swiper-pagination,
-    &__swiper-wrapper .swiper-button-next,
-    &__swiper-wrapper .swiper-button-prev {
-        bottom: 11px;
-        top: auto;
+        padding-bottom: 30px;
     }
 }
 
-.btn {
-    background: $raspberry;
-    border-radius: 10px;
-    color: beige;
-    text-align: center;
-    width: 205px;
-    height: 79px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    text-transform: uppercase;
-    line-height: 1.2;
+.reviews {
+    padding-bottom: 20px;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__slider {
+        width: 100%;
+        border-radius: 9px;
+        padding-bottom: 20px;
+    }
+
+    &__swiper-wrapper {
+        padding-bottom: 30px;
+    }
 }
 
-.btn__menu {
-    background: $raspberry;
-    border-radius: 10px;
-    color: beige;
-    text-align: center;
-}
 
-.title {
-    font-size: 24px;
-    line-height: 1.2;
-    color: #de2448;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 10px;
-    background: #ffe8d3;
-    width: 100%;
-    max-height: 65px;
-    margin-bottom: 10px;
-}
+
+
+
+
+
+
+
+
 
 // faq
 
@@ -442,6 +496,7 @@ ul {
         }
     }
 }
+
 // Contact
 .contact {
     &__social {
@@ -456,6 +511,7 @@ ul {
         &:nth-child(even) {
             padding: 0 6px 0 41px;
         }
+
         &:nth-child(odd) {
             padding: 0 41px 0 6px;
         }
@@ -476,6 +532,7 @@ ul {
             background: #25d366;
             border-left: 3px solid #fff;
         }
+
         &:nth-child(2)::before {
             position: absolute;
             content: "";
@@ -487,6 +544,7 @@ ul {
             background: url("/img/footer/content.png");
             border-right: 3px solid #fff;
         }
+
         &:nth-child(3)::after {
             position: absolute;
             content: "";
@@ -498,6 +556,7 @@ ul {
             border-radius: 10px;
             border-left: 3px solid #fff;
         }
+
         &:nth-child(4)::after {
             position: absolute;
             content: "";
@@ -512,8 +571,7 @@ ul {
     }
 }
 
-@media (min-width: 375px) {
-}
+@media (min-width: 375px) {}
 
 @media (min-width: 768px) {
     .container {
