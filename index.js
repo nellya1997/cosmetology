@@ -25,19 +25,16 @@ function showAnswer(item) {
 }
 
 //  swipers
-/*
-const exampleSwiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
 
-  // If we need pagination
+const swiper1 = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 30,
+  spaceBetween: 50,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

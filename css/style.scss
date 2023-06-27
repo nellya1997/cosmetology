@@ -12,6 +12,7 @@ $beige: #ffe8d3;
 $dark: #4f443d;
 $red: #de2448;
 $raspberry: #e74e6c;
+$purple: purple;
 
 html {
     scroll-behavior: smooth;
@@ -23,18 +24,24 @@ body {
     line-height: 14px;
     min-width: 320px;
     overflow-x: hidden;
+
     background-color: rgb(255, 245, 245);
+}
+
+
+.container {
+    padding: 0px 20px;
 }
 
 main {
     margin: 0 auto;
 }
 
-.container {
+<<<<<<< HEAD=======.container {
     margin: 0 12px;
 }
 
-section {
+>>>>>>>e33fc04c327aef4bdaab5dbb85f000c56561ca48 section {
     margin: 0px 0px 100px 0px;
 }
 
@@ -44,6 +51,7 @@ ul {
     margin: 0;
 }
 
+
 .flex-col {
     display: flex;
     justify-content: center;
@@ -51,7 +59,9 @@ ul {
     align-items: center;
 }
 
-@mixin flex-wrapper {
+<<<<<<< HEAD //что-то из этого нужно удалить:
+
+=======>>>>>>>e33fc04c327aef4bdaab5dbb85f000c56561ca48 @mixin flex-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -207,6 +217,7 @@ ul {
     background: $beige;
     margin-bottom: 10px;
 }
+
 // Servises
 .services {
     &__title {
@@ -222,10 +233,12 @@ ul {
     &__menu {
         margin-bottom: 100px;
     }
+
     @keyframes ani {
         0% {
             opacity: 0;
         }
+
         100% {
             opacity: 1;
         }
@@ -295,6 +308,52 @@ ul {
     }
 }
 
+.picture {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    & img {
+        //width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 9px;
+    }
+
+    &--services {
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+
+
+.examples {
+    &__title-swipper {
+        margin-bottom: 23px;
+    }
+
+    &__swiper {
+        // padding: 0 50px;
+        margin-bottom: 63px;
+    }
+
+    &__swiper-wrapper {
+        padding-bottom: 10px;
+    }
+
+    &__swiper-wrapper .swiper-pagination,
+    &__swiper-wrapper .swiper-button-next,
+    &__swiper-wrapper .swiper-button-prev {
+        bottom: 11px;
+        top: auto;
+    }
+}
+
+
+
 .btn {
     background: $raspberry;
     border-radius: 10px;
@@ -307,6 +366,7 @@ ul {
     text-transform: uppercase;
     line-height: 1.2;
 }
+
 .btn__menu {
     background: $raspberry;
     border-radius: 10px;
@@ -325,18 +385,17 @@ ul {
     width: 100%;
     max-height: 65px;
     margin-bottom: 10px;
-
-    &--h1 {
-    }
 }
 
 // faq
 
 .faq {
     color: #48403b;
+
     &__list-inner {
         width: 100%;
     }
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -365,6 +424,7 @@ ul {
         font-size: 16px;
         margin-bottom: 5px;
     }
+
     &__item-answer {
         font-size: 12px;
         font-family: Roboto;
@@ -378,6 +438,7 @@ ul {
         position: relative;
         margin: 0;
         padding: 0 0 0 15px;
+
         &::before {
             position: absolute;
             content: "";
@@ -389,79 +450,6 @@ ul {
             background: #48403b;
         }
     }
-}
-
-// Contact
-.contact {
-
-    &__social {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 30px;
-        text-align: center;
-    }
-
-    &__social-btn {
-        &:nth-child(even){
-            padding: 0 6px 0 41px;
-        }
-        &:nth-child(odd){
-            padding: 0 41px 0 6px;
-        }
-
-        position: relative;
-        font-size: 16px;
-        height: 55px;
-        width: 100%;
-
-        &:nth-child(1):after {
-            position: absolute;
-            content: "";
-            width: 29px;
-            height: 55px;
-            top: 0;
-            right: 0;
-            border-radius: 10px;
-            background: #25d366;
-            border-left: 3px solid #fff;
-        }
-        &:nth-child(2)::before {
-            position: absolute;
-            content: "";
-            width: 29px;
-            height: 55px;
-            top: 0;
-            left: 0;
-            border-radius: 10px;
-            background: url("/img/footer/content.png");
-            border-right: 3px solid #fff;
-        }
-        &:nth-child(3)::after {
-            position: absolute;
-            content: "";
-            width: 29px;
-            height: 55px;
-            top: 0;
-            right: 0;
-            background: #0088cc;
-            border-radius: 10px;
-            border-left: 3px solid #fff;
-        }
-        &:nth-child(4)::after {
-            position: absolute;
-            content: "";
-            width: 29px;
-            height: 55px;
-            top: 0;
-            left: 0;
-            border-radius: 10px;
-            background: #4c75a3;
-            border-right: 3px solid #fff;
-        }
-    }
-
-
 }
 
 @media (min-width: 375px) {

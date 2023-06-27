@@ -13,6 +13,10 @@ body {
   background-color: rgb(255, 245, 245);
 }
 
+.container {
+  padding: 0px 20px;
+}
+
 main {
   margin: 0 auto;
 }
@@ -248,6 +252,35 @@ ul {
   padding: 12px 14px;
 }
 
+.picture {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.picture img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 9px;
+}
+.picture--services {
+  margin-bottom: 5px;
+}
+
+.examples__title-swipper {
+  margin-bottom: 23px;
+}
+.examples__swiper {
+  margin-bottom: 63px;
+}
+.examples__swiper-wrapper {
+  padding-bottom: 10px;
+}
+.examples__swiper-wrapper .swiper-pagination, .examples__swiper-wrapper .swiper-button-next, .examples__swiper-wrapper .swiper-button-prev {
+  bottom: 11px;
+  top: auto;
+}
+
 .btn {
   background: #e74e6c;
   border-radius: 10px;
@@ -280,6 +313,8 @@ ul {
   max-height: 65px;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
 .faq {
   color: #48403b;
 }
@@ -334,6 +369,7 @@ ul {
   border-radius: 50%;
   background: #48403b;
 }
+>>>>>>> e33fc04c327aef4bdaab5dbb85f000c56561ca48
 
 .contact__social {
   display: grid;
@@ -409,4 +445,4 @@ ul {
   .container {
     max-width: 820px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
