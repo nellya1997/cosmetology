@@ -1,10 +1,38 @@
 // Подключение шрифтов
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
-@import url("/fonts/inter-extra-light.otf");
-// font-family: 'EB Garamond', serif;
-// font-family: 'Inter', sans-serif;
-// font-family: 'Roboto', sans-serif;
-// font-family: "Inter Extra Light";
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Light/Roboto-Light.woff2) format("woff2"),
+        url(/fonts/Roboto-Light/Roboto-Light.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(/fonts/Inter-Light/Inter-LightBETA.woff2) format("woff2"),
+        url(/fonts/Inter-Light/Inter-LightBETA.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter Extra Light";
+    src: url(/fonts/InterExtra-Ligth/Inter-ExtraLightBETA.woff2) format("woff2"),
+        url(/fonts/InterExtra-Ligth/Inter-ExtraLightBETA.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/Garamond/garamond.woff2) format("woff2"), url(/fonts/Garamond/garamond.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 // цвета
 $grey: #7d7d7d;
@@ -19,17 +47,13 @@ html {
 }
 
 body {
-    font-family: "EB Garamond", serif;
+    font-family: "Garamond", serif;
     font-size: 14px;
     line-height: 14px;
     min-width: 320px;
     overflow-x: hidden;
 
     background-color: rgb(255, 245, 245);
-}
-
-.container {
-    padding: 0px 20px;
 }
 
 main {
@@ -48,6 +72,12 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .flex-col {
@@ -88,8 +118,8 @@ ul {
     width: 100%;
     max-height: 65px;
     margin-bottom: 10px;
+    font-weight: normal;
 }
-
 
 //что-то из этого нужно удалить:
 
@@ -146,6 +176,7 @@ ul {
 }
 
 // Info
+
 .info {
     margin-bottom: 82px;
 
@@ -158,6 +189,7 @@ ul {
     &__title {
         font-size: 32px;
         text-transform: uppercase;
+        font-weight: normal;
 
         span {
             color: #d8405d;
@@ -165,7 +197,7 @@ ul {
     }
 
     &__sibtitle {
-        font-family: Inter;
+        font-family: "Inter Extra Light";
         font-size: 20px;
         font-weight: 200;
     }
@@ -337,9 +369,6 @@ ul {
     }
 }
 
-
-
-
 // slider started
 
 .picture {
@@ -492,11 +521,29 @@ ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 30px;
+        grid-column-gap: 18px;
         text-align: center;
     }
 
     &__social-btn {
+        margin-bottom: 20px;
+        position: relative;
+        font-size: 16px;
+        height: 55px;
+        width: 100%;
+        transition: background 0.2s ease-in, top 0.2s ease-in;
+
+        &:hover {
+            background: #e9385c;
+            position: relative;
+            top: 1px;
+        }
+
+        &:active {
+            position: relative;
+            top: 5px;
+        }
+
         &:nth-child(even) {
             padding: 0 6px 0 41px;
         }
@@ -504,11 +551,6 @@ ul {
         &:nth-child(odd) {
             padding: 0 41px 0 6px;
         }
-
-        position: relative;
-        font-size: 16px;
-        height: 55px;
-        width: 100%;
 
         &:nth-child(1):after {
             position: absolute;
@@ -560,7 +602,11 @@ ul {
     }
 }
 
-@media (min-width: 375px) {}
+@media (min-width: 375px) {
+    .contact__social {
+        grid-column-gap: 30px;
+    }
+}
 
 @media (min-width: 768px) {
     .container {
