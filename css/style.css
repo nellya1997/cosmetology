@@ -313,8 +313,7 @@ ul {
   max-height: 65px;
   margin-bottom: 10px;
 }
-<<<<<<< HEAD
-=======
+
 .faq {
   color: #48403b;
 }
@@ -369,7 +368,6 @@ ul {
   border-radius: 50%;
   background: #48403b;
 }
->>>>>>> e33fc04c327aef4bdaab5dbb85f000c56561ca48
 
 .contact__social {
   display: grid;
@@ -445,4 +443,4 @@ ul {
   .container {
     max-width: 820px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

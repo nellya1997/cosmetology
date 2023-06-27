@@ -40,4 +40,4 @@ const swiper1 = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-*/
+
