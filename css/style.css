@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
 @import url("/fonts/inter-extra-light.otf");
 html {
@@ -40,6 +41,39 @@ ul {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.btn {
+  background: #e74e6c;
+  border-radius: 10px;
+  color: beige;
+  text-align: center;
+  width: 205px;
+  height: 79px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.btn__menu {
+  background: #e74e6c;
+  border-radius: 10px;
+  color: beige;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #de2448;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: #ffe8d3;
+  width: 100%;
+  max-height: 65px;
+  margin-bottom: 10px;
 }
 
 .flex-wrapper {
@@ -258,60 +292,66 @@ ul {
   width: 100%;
 }
 .picture img {
+  width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 9px;
 }
-.picture--services {
-  margin-bottom: 5px;
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: 27px;
+  height: 27px;
+  opacity: 1;
+  background: #D9D9D9;
 }
 
-.examples__title-swipper {
-  margin-bottom: 23px;
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
 }
-.examples__swiper {
-  margin-bottom: 63px;
+
+/*
+
+//хоть как то работает и збс
+.swiper .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+
+    &.swiper-pagination-bullet-active {
+        background-color: red;
+    }
+}
+*/
+.examples {
+  padding-bottom: 20px;
+}
+.examples__title {
+  margin-bottom: 10px;
+}
+.examples__slider {
+  width: 100%;
+  border-radius: 9px;
+  padding-bottom: 20px;
 }
 .examples__swiper-wrapper {
-  padding-bottom: 10px;
-}
-.examples__swiper-wrapper .swiper-pagination, .examples__swiper-wrapper .swiper-button-next, .examples__swiper-wrapper .swiper-button-prev {
-  bottom: 11px;
-  top: auto;
+  padding-bottom: 30px;
 }
 
-.btn {
-  background: #e74e6c;
-  border-radius: 10px;
-  color: beige;
-  text-align: center;
-  width: 205px;
-  height: 79px;
+.reviews {
+  padding-bottom: 20px;
+}
+.reviews__title {
   margin-bottom: 10px;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 1.2;
 }
-
-.btn__menu {
-  background: #e74e6c;
-  border-radius: 10px;
-  color: beige;
-  text-align: center;
-}
-
-.title {
-  font-size: 24px;
-  line-height: 1.2;
-  color: #de2448;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 10px;
-  background: #ffe8d3;
+.reviews__slider {
   width: 100%;
-  max-height: 65px;
-  margin-bottom: 10px;
+  border-radius: 9px;
+  padding-bottom: 20px;
+}
+.reviews__swiper-wrapper {
+  padding-bottom: 30px;
 }
 
 .faq {
@@ -443,4 +483,4 @@ ul {
   .container {
     max-width: 820px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
