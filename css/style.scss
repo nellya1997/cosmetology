@@ -1,10 +1,35 @@
 // Подключение шрифтов
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&family=Roboto:wght@300&display=swap");
-@import url("/fonts/inter-extra-light.otf");
-// font-family: 'EB Garamond', serif;
-// font-family: 'Inter', sans-serif;
-// font-family: 'Roboto', sans-serif;
-// font-family: "Inter Extra Light";
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Light/Roboto-Light.woff2) format("woff2"),
+        url(/fonts/Roboto-Light/Roboto-Light.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(/fonts/Inter-Light/Inter-LightBETA.woff2) format("woff2"),
+        url(/fonts/Inter-Light/Inter-LightBETA.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter Extra Light";
+    src: url(/fonts/InterExtra-Ligth/Inter-ExtraLightBETA.woff2) format("woff2"),
+        url(/fonts/InterExtra-Ligth/Inter-ExtraLightBETA.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/Garamond/garamond.woff2) format("woff2"), url(/fonts/Garamond/garamond.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 // цвета
 $grey: #7d7d7d;
@@ -19,7 +44,7 @@ html {
 }
 
 body {
-    font-family: "EB Garamond", serif;
+    font-family: "Garamond", serif;
     font-size: 14px;
     line-height: 14px;
     min-width: 320px;
@@ -44,6 +69,11 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .flex-col {
@@ -142,6 +172,7 @@ ul {
 }
 
 // Info
+
 .info {
     margin-bottom: 82px;
 
@@ -162,7 +193,7 @@ ul {
     }
 
     &__sibtitle {
-        font-family: Inter;
+        font-family: "Inter Extra Light";
         font-size: 20px;
         font-weight: 200;
     }
@@ -349,19 +380,17 @@ ul {
     }
 }
 
-
 .swiper-pagination-bullet {
     margin: -6px !important;
     border: 19.33px solid transparent;
-    border-bottom: 19.33px solid rgba(217, 217, 217, 1.0);
+    border-bottom: 19.33px solid rgba(217, 217, 217, 1);
     opacity: 1;
-    background: #D9D9D9;
-
+    background: #d9d9d9;
 }
 
 .swiper-pagination-bullet-active {
     border: 27.62px solid transparent;
-    border-bottom: 27.62px solid rgba(217, 217, 217, 1.0);
+    border-bottom: 27.62px solid rgba(217, 217, 217, 1);
 }
 
 .examples {
