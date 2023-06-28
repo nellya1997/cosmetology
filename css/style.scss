@@ -52,6 +52,7 @@ body {
     line-height: 14px;
     min-width: 320px;
     overflow-x: hidden;
+    color: #4F443D;
 
     background-color: rgb(255, 245, 245);
 }
@@ -132,6 +133,10 @@ h2 {
 
 .flex-wrapper {
     @include flex-wrapper;
+
+    // .services & {
+    //     margin-bottom: 30px;
+    // }
 }
 
 .dropdown {
@@ -178,7 +183,7 @@ h2 {
 // Info
 
 .info {
-    margin-bottom: 82px;
+    margin-bottom: 52px;
 
     &__inner {
         min-width: 351px;
@@ -212,7 +217,7 @@ h2 {
         justify-content: center;
         align-items: end;
         margin-top: -9%;
-     
+
     }
 
     &__feature {
@@ -346,15 +351,16 @@ h2 {
         color: $red;
         font-size: 20px;
         text-transform: uppercase;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
     &__item-desc {
-        text-align: center;
-        max-width: 170px;
-        font-size: 12px;
+        font-size: 17px;
+        line-height: 17px;
         font-family: Roboto;
         font-weight: 300;
+        text-align: center;
+        max-width: 170px;
         text-transform: lowercase;
         margin-bottom: 10px;
     }
@@ -391,33 +397,22 @@ h2 {
     }
 }
 
-.swiper-pagination .customPagination {
-    border-radius: 0;
-    background: transparent;
-}
-
 .swiper-pagination-bullet {
     opacity: 1;
-    //margin: -4px;
-    display: inline;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: -4px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/pagination/pagination.svg') center/cover no-repeat;
+    border-radius: 0px !important;
+    margin: -4px !important;
 }
 
 .swiper-pagination-bullet:nth-child(odd) {
-    svg {
-        transform: rotate(180deg);
-    }
+    transform: rotate(180deg);
 }
 
 .swiper-pagination-bullet-active {
-    svg {
-        width: 27px;
-        height: 27px;
-    }
+    width: 28px;
+    height: 28px;
 }
 
 // slider has ended
@@ -466,6 +461,14 @@ h2 {
         width: 100%;
     }
 
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        margin-bottom: 30px;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -475,34 +478,6 @@ h2 {
         counter-reset: number 0;
         row-gap: 30px;
     }
-
-    // &__item {
-    //     // counter-increment: number;
-    //     // padding-left: 60px;
-    //     // position: relative;
-    //     // margin-bottom: 30px;
-
-    //     // &::before,
-    //     // &::after {
-    //     //     content: "";
-    //     //     width: 25px;
-    //     //     height: 4px;
-    //     //     border-radius: 42px;
-    //     //     background-color: #7a7dbc;
-    //     //     position: absolute;
-    //     //     left: 8px;
-    //     //     top: 50%;
-    //     //     transform: translateY(-50%);
-    //     // }
-
-    //     // &::after {
-    //     //     transform: rotate(90deg) translate(-0%, 0%);
-    //     // }
-
-    //     // &:last-child {
-    //     //     ma
-    //     // }
-    // }
 
     &__item-question {
         font-size: 19px;
@@ -536,10 +511,12 @@ h2 {
     }
 
     &__item-answer {
-        font-size: 12px;
-        font-family: Roboto;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: 'Roboto';
         font-weight: 300;
-        line-height: 1.4;
+        // line-height: 1.4;
+        padding-top: 15px;
         color: $dark;
         padding-left: 60px;
         // animation: ani 0.5s forwards;
@@ -689,6 +666,7 @@ h2 {
         &__sibtitle {
             font-size: 30px;
         }
+
         &__feature {
             row-gap: 14px;
         }
@@ -698,25 +676,25 @@ h2 {
         font-size: 28px;
         text-transform: uppercase;
     }
-    
+
     .item-2 .info__feature-title {
         font-size: 26px;
         text-transform: uppercase;
     }
-    
+
     .item-3 .info__feature-title {
         font-size: 20px;
     }
-    
+
     .item-1 .info__feature-desc {
         font-size: 17px;
         font-weight: 300;
     }
-    
+
     .item-2 .info__feature-desc {
         font-size: 17px;
     }
-    
+
     .item-3 .info__feature-desc {
         font-size: 15px;
     }
