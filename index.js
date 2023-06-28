@@ -15,15 +15,37 @@ faqButton.addEventListener('click', function () {
 });
 
 // faq аккордеон
-const faqQuestion = document.querySelectorAll('[data-name="faq-question"]');
+// const faqQuestion = document.querySelectorAll('[data-name="faq-question"]');
 
-faqQuestion.forEach(function (item) {
-  item.addEventListener('click', showAnswer);
+// faqQuestion.forEach(function (item) {
+//   item.addEventListener('click', showAnswer);
+// });
+// function showAnswer(item) {
+//   this.nextElementSibling.classList.toggle('none');
+// }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.faq__item');
+  accordions.forEach(element => {
+      element.addEventListener('click', (e) => {
+          const self = e.currentTarget;
+          const control = self.querySelector('.faq__item-question');
+          const content = self.querySelector('.faq__item-answer');
+
+          self.classList.toggle('open');
+
+          if (self.classList.contains('open')) {
+              control.setAttribute('aria-expanded', true);
+              control.setAttribute('aria-hidden', false);
+              content.style.maxHeight = content.scrollHeight + 'px';
+          } else {
+              control.setAttribute('aria-expanded', false);
+              control.setAttribute('aria-hidden', true);
+              content .style.maxHeight = null;
+          }
+      });
+  });
 });
-function showAnswer(item) {
-  this.nextElementSibling.classList.toggle('none');
-}
-
 //  swipers
 
 const swiper = new Swiper('.swiper', {
