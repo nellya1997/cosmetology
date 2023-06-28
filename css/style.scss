@@ -323,7 +323,11 @@ h2 {
 }
 
 // dropdown
-.none {
+// .none {
+//     display: none;
+// }
+
+.faq__item.none .faq__item-answer {
     display: none;
 }
 
@@ -472,23 +476,63 @@ h2 {
         row-gap: 30px;
     }
 
-    &__item {
-        counter-increment: number;
-        padding-left: 24px;
-        position: relative;
+    // &__item {
+    //     // counter-increment: number;
+    //     // padding-left: 60px;
+    //     // position: relative;
+    //     // margin-bottom: 30px;
 
-        &::before {
-            content: counter(number) ".";
-            position: absolute;
-            left: 10px;
-            top: 0;
-        }
-    }
+    //     // &::before,
+    //     // &::after {
+    //     //     content: "";
+    //     //     width: 25px;
+    //     //     height: 4px;
+    //     //     border-radius: 42px;
+    //     //     background-color: #7a7dbc;
+    //     //     position: absolute;
+    //     //     left: 8px;
+    //     //     top: 50%;
+    //     //     transform: translateY(-50%);
+    //     // }
+
+    //     // &::after {
+    //     //     transform: rotate(90deg) translate(-0%, 0%);
+    //     // }
+
+    //     // &:last-child {
+    //     //     ma
+    //     // }
+    // }
 
     &__item-question {
+        font-size: 19px;
+        line-height: 21px;
         cursor: pointer;
-        font-size: 16px;
         margin-bottom: 5px;
+        position: relative;
+        padding-left: 60px;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 25px;
+            height: 4px;
+            border-radius: 42px;
+            background-color: $dark;
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            transform: rotate(90deg) translate(-7%, 0%);
+            transition: all 0.3s ease-in;
+        }
+
+        .faq__item.open &::after {
+            transform: rotate(0deg) translate(-7%, -50%);
+        }
     }
 
     &__item-answer {
@@ -497,7 +541,21 @@ h2 {
         font-weight: 300;
         line-height: 1.4;
         color: $dark;
-        animation: ani 0.5s forwards;
+        padding-left: 60px;
+        // animation: ani 0.5s forwards;
+
+        max-height: 0;
+        // opacity: 0;
+        overflow: hidden;
+        will-change: max-height;
+        transition: all 0.3s ease-in;
+    }
+
+    &__item.open {
+        .faq__item-answer {
+            visibility: visible;
+            max-height: 70px;
+        }
     }
 
     &__item-answer p {
@@ -516,6 +574,10 @@ h2 {
             background: #48403b;
         }
     }
+}
+
+.none {
+    display: none;
 }
 
 // Contact
@@ -631,7 +693,7 @@ h2 {
             row-gap: 14px;
         }
     }
-    
+
     .item-1 .info__feature-title {
         font-size: 28px;
         text-transform: uppercase;
