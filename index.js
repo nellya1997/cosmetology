@@ -40,20 +40,3 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination'
   },
 });
-
-/*
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 30,
-  spaceBetween: 50,
-  pagination: {
-    clickable: true,
-    renderBullet: function(index, className) {
-      return '\
-      <span class="customPagination ' + className + '"></span>'
-    },
-    el: '.swiper-pagination'
-  },
-});
-*/
