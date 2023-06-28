@@ -573,10 +573,10 @@ h2 {
         font-size: 16px;
         height: 55px;
         width: 100%;
-        transition: background 0.2s ease-in, top 0.2s ease-in;
+        transition: background-color 0.2s ease-in, top 0.2s ease-in;
 
         &:hover {
-            background: #e9385c;
+            background-color: #e9385c;
             position: relative;
             top: 1px;
         }
