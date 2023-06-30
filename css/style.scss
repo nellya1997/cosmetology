@@ -452,6 +452,31 @@ h2 {
     }
 }
 
+.education {
+    padding-bottom: 20px;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__slider {
+        width: 100%;
+        border-radius: 9px;
+        padding-bottom: 25px;
+    }
+
+    &__swiper-wrapper {
+        padding-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
 // faq
 
 .faq {
