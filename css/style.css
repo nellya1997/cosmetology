@@ -380,6 +380,21 @@ h2 {
   padding-bottom: 40px;
 }
 
+.education {
+  padding-bottom: 20px;
+}
+.education__title {
+  margin-bottom: 10px;
+}
+.education__slider {
+  width: 100%;
+  border-radius: 9px;
+  padding-bottom: 25px;
+}
+.education__swiper-wrapper {
+  padding-bottom: 40px;
+}
+
 .faq {
   color: #48403b;
 }
